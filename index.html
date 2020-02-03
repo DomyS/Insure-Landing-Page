@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <title>Frontend Mentor | Insure landing page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <a href="#"><img src="./images/logo.svg" alt="logo"/></a>
+        </div>
+        <ul class="menu" id="myMenu">
+          <li><a href="#">How we work</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Account</a></li>
+          <li><a class="viewPlans" href="#">View plans</a></li>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </ul>
+      </nav>
+    </div>
+    <div class="page1">
+      <div class="pageLeft">
+        <hr style="width: 10vw; border-top: none" />
+        <h1>Humanizing your insurance.</h1>
+        <p>
+          Get your life insurance coverage easier and faster. We blend our
+          expertise and technology to help you find the plan that’s right for
+          you. Ensure you and your loved ones are protected.
+        </p>
+        <button>view plans</button>
+      </div>
+      <div class="pageRight">
+        <img
+          class="rightImage"
+          src="./images/image-intro-desktop.jpg"
+          height="580"
+          width="480"
+        />
+        <img
+          class="rightDecor"
+          src="./images/bg-pattern-intro-right-desktop.svg"
+          height="500"
+          width="400"
+        />
+      </div>
+      <div class="pageBottom">
+        <img
+          src="./images/bg-pattern-intro-left-desktop.svg"
+          height="500"
+          width="200"
+        />
+      </div>
+    </div>
+    <div class="page2">
+      <div class="different">
+        <hr style="width: 10vw; border-bottom: none;" />
+        <h1>We’re different</h1>
+      </div>
+      <div class="threeDivs">
+        <div class="divOne">
+          <img src="./images/icon-snappy-process.svg" />
+          <h2>Snappy Process</h2>
+          <p>
+            Our application process can be completed in minutes, not hours.
+            Don’t get stuck filling in tedious forms.
+          </p>
+        </div>
+        <div class="divTwo">
+          <img src="./images/icon-affordable-prices.svg" />
+          <h2>Affordable Prices</h2>
+          <p>
+            We don’t want you worrying about high monthly costs. Our prices may
+            be low, but we still offer the best coverage possible.
+          </p>
+        </div>
+        <div class="divThree">
+          <img src="./images/icon-people-first.svg" />
+          <h2>People First</h2>
+          <p>
+            Our plans aren’t full of conditions and clauses to prevent payouts.
+            We make sure you’re covered when you need it.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="page3">
+      <h1>Find out more about how we work</h1>
+      <button>How we work?</button>
+      <img
+        class="workDecor"
+        src="./images/bg-pattern-how-we-work-desktop.svg"
+      />
+    </div>
+
+    <div class="page4">
+      <img src="./images/bg-pattern-footer-desktop.svg" />
+      <div class="upperLine">
+        <img src="./images/logo.svg" />
+        <ul>
+          <li>
+            <i class="fa fa-facebook-square"></i>
+          </li>
+          <li>
+            <i class="fa fa-twitter"></i>
+          </li>
+          <li>
+            <i class="fa fa-pinterest"></i>
+          </li>
+          <li>
+            <i class="fa fa-instagram"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="footerMenu">
+        <ul class="firstColumn">
+          <p>Our company</p>
+          <li>How we work?</li>
+          <li>Why Insure</li>
+          <li>View plans</li>
+          <li>Reviews</li>
+        </ul>
+        <ul class="secondColumn">
+          <p>Help me</p>
+          <li>FAQ</li>
+          <li>Terms of use</li>
+          <li>Privacy policy</li>
+          <li>Cookies</li>
+        </ul>
+        <ul class="thirdColumn">
+          <p>Contact</p>
+          <li>Sales</li>
+          <li>Support</li>
+          <li>Live chat</li>
+        </ul>
+        <ul class="forthColumn">
+          <p>Others</p>
+          <li>Careers</li>
+          <li>Press</li>
+          <li>Licenses</li>
+        </ul>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">DomyS</a>.
+      </div>
+    </div>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myMenu");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "menu";
+        }
+      }
+    </script>
+  </body>
+</html>
